@@ -4,9 +4,9 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-html{
+/* html{
     
-}
+} */
 body{
     background-color: rgb(242, 248, 248);
 }
@@ -27,9 +27,9 @@ body{
     justify-content: center;
     align-items: center;
 }
-.fm-group{
+/* .fm-group{
     
-}
+} */
 .fm-group form{
     border: 2px solid whitesmoke;
     padding: 2rem;
