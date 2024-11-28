@@ -24,3 +24,23 @@ if(track ==="select")throw new Error("select a track")
        alert(error.message)
 }
 })
+
+const apiStatus = async()=>{
+    try {
+        const url = `${baseUrl}${routes.status}`;
+          const res = await fetch(url, {
+            method: "GET",
+            headers: {
+                "content-Type":"application/json",
+            },
+          });
+          const result = await res.json();
+          if(!res.ok){
+            throw new Error(result.error)
+          }
+    } catch (error) {
+        alert(error.message);
+        console.log(error)
+    }
+}
+apiStatus();
