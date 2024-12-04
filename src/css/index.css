@@ -66,6 +66,66 @@ body{
     padding-left: 5px;
     padding-right: 5px;
     height: 30px;
-    
+
     /* border-radius: 1rem solid whitesmoke; */
 }
+.fm-btn{
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px
+}
+.btn{
+    padding:5px;
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: transparent;
+    border: 1.5px solid whitesmoke;
+    border-radius: 1rem;
+    color: whitesmoke;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 2.3s ease-in;
+}
+.btn:hover{
+    background-color:blue;
+    border: none;
+}
+.fm-btn span{
+    font-size: 12px;
+    color: whitesmoke;
+}
+.fm-btn span a{
+    text-decoration: none;
+    font-size: 12px;
+    color: whitesmoke;
+    border-radius: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.fm-btn span a:hover{
+    background-color: blue;
+}
+/*working on display stle */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: block;
+  }
+  
+  .wrapper {
+    background: rgb(27,21,122);
+    background: linear-gradient(90deg, rgba(27,21,122,1) 0%, rgba(81,195,235,1) 30%, rgba(7,113,144,1) 60%, rgba(9,69,129,1) 100%, rgba(103,206,227,1) 100%);
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+ .content-ds{
+    flex-direction: column;
+ }
+ .sidebar ul{
+    background: lightblue;
+    padding-left: 20px;
+ }
