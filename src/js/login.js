@@ -23,8 +23,9 @@ signin.addEventListener('click', async (e) => {
         if (!res.ok) {
             throw new Error(result.error);
         }  
-        const {acessToken, refreshToken} = result;
-        const auth = {acessToken, refreshToken};
+        const {accessToken, refreshToken} = result;
+        const auth = {accessToken, refreshToken};
+        // console.log(auth)
         localStorage.setItem("auth", JSON.stringify(auth));
         alert(result.message)
         window.location = "../pages/display.html"
