@@ -19,7 +19,6 @@ signin.addEventListener('click', async (e) => {
             body: JSON.stringify(user)
         });
         const result = await res.json();
-        // console.log(result);
         if (!res.ok) {
             throw new Error(result.error);
         }  
